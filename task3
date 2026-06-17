@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>personal details</title>
+</head>
+<body>
+    <h1>Personal details</h1>
+    <ul type="disc">
+        <li>name: sk</li>
+        <li>gender: male</li>
+        <li>e-mail id:sk2007@gmail.com</li>
+        <li>phone number: 1234567890</li>
+        <li>xth percentage: 85%</li>
+        <li>inter percentage: 80%</li>
+        <li>aggregate percentage in B.Tech: 82%</li>
+
+    </ul>
+   
+    
+   
+    
+</body>
+</html>
