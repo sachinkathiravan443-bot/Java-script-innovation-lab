@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h2>Function Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number"/><br>
+    <input type="number" id="num2" placeholder="Enter second number"/><br>
+    <select id="operation">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+    </select><br>
+    <button onclick="calculate()">Calculate</button>
+    <div id="result">Result: </div>
+
+    <script>
+
+         function calculate(){
+            let num1=parseInt(document.getElementById("num1").value);
+            let num2=parseInt(document.getElementById("num2").value);
+            let operation=document.getElementById("operation").value;
+            let result;
+            if(isNaN(num1) || isNaN(num2)){
+                result="Please enter valid numbers";
+            } else {
+                switch(operation) {
+                    case "add":
+                        result = num1 + num2;
+                        break;
+                    case "subtract":
+                        result = num1 - num2;
+                        break;
+                    case "multiply":
+                        result = num1 * num2;
+                        break;
+                    case "divide":
+                        if(num2 !== 0) {
+                            result = num1 / num2;
+                        } else {
+                            result = "Please enter a non-zero second number";
+                        }
+                        break;
+                }
+            }
+            document.getElementById("result").innerText="Result: " + result;
+        }
+    </script>
+</body>
+</html>
